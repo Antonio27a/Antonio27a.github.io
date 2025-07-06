@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(to right, #ffe0ec, #ffeae0);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #b30059;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.heart {
+  font-size: 4rem;
+  animation: pulse 1s infinite;
+  margin: 1rem;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(4); }
+  50% { transform: scale(1.2); }
+}
+
+video {
+  max-width: 200%;
+  border: 5px solid #b30059;
+  box-shadow: 0 0 20px rgba(179, 0, 89, 0.5);
+  animation: fadeIn 5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
